@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+:root {
+  --line-dark : #BDBDBD;
+  --line-light : #F2F2F2;
+  --font-light : #828282;
+}
+
+.img-movie {
+  display: block;
+  width: 180px;
+}
+
+/* CSS */
+.movie-chart {
+  margin: 86px auto;
+  width: 1060px;
+  border-radius: 10px;
+  border: 2px solid var(--font-light);
+  box-sizing: border-box;
+  background-color: var(--line-light);
+}
+
+.movie-chart .title-chart, .movie-chart .list-category {
+  text-align: center;
+}
+.movie-chart .title-chart {
+  margin: 40px auto 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.movie-chart .title-chart::after {
+  content: '';
+  display: block;
+  width: 650px;
+  height: 2px;
+  background-color: var(--line-dark);
+  margin: 36px auto 0 ;
+} 
+
+.movie-chart .list-category li {
+  display: inline-block;
+  margin : 27px 60px 28px 0;
+  margin-right: 60px;
+  margin-bottom: 28px;
+}
+
+.movie-chart .list-category li:last-child {
+  margin-right: 0px;
+}
