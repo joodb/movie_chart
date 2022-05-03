@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+$color-gray-dark : #BDBDBD;
+$color-gray-light : #F2F2F2;
+$font-color-light : #828282;
+$font-stack : Roboto;
+$font-content-stack : Noto Sans KR;
+
+.img-movie {
+  display: block;
+}
+
+.box {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid $color-gray-dark;
+}
+
+.movie-chart {
+  margin: 86px auto;
+  max-width: 1060px;
+  background-color: $color-gray-light;
+  padding: 0 26px 29px ;
+  .title-chart, .list-category {
+    text-align: center;
+  }
+
+  .title-chart {
+    margin: 40px auto 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .title-chart::after {
+    content: '';
+    display: block;
+    max-width: 650px;
+    height: 2px;
+    background-color: $color-gray-dark;
+    margin: 36px auto 0 ;
+  } 
+
+  /* list */
+  .list-category {
+    li {
+      display: inline-block;
+      margin : 27px 60px 28px 0;
+      margin-right: 60px;
+      margin-bottom: 28px;
+      font-weight: 500;
+      color: $font-color-light;
+    }
+
+    li:last-child {
+      margin-right: 0px;
+    }
+    
+    /* js에서 선택시 추가될 class */
+    .choose {
+      color: #000;
+      font-weight: 900;  
+    }
+  }
+
+  
+  @at-root .list-movie {
+    width: 1003px;
+    background-color: #fff;
+    padding: 24px 25px 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+    font-family: $font-content-stack;
+
+    @at-root .content-movie {
+      width: 220px;
+      display: block;
+      border: 1px solid $color-gray-dark;
+      padding: 18px 19px 0 19px;
+      box-sizing: border-box; 
+      overflow: hidden;
+      
+      .img-movie{
+        width: 100%;
+        border: 1px solid $color-gray-dark;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+      }
+      
+      .title-movie {
+        padding-top: 11px;
+        font-size: 1em;
+        font-weight: 900;
+        line-height: 1.5;
+      }
+
+      .list-detail {
+        font-size: 0.75em;
+      }
+    }
+    
+
+
+    
+  }
+    
+}
+
+footer {
+  width: 100%;
+  background-color: $color-gray-light;
+  text-align: center;
+}

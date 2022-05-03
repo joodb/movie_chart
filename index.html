@@ -7,232 +7,148 @@
     <title>Movie Chart</title>
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <section class="movie-chart">
+        <section class="movie-chart box">
             <h2 class="title-chart">정글 시네마 영화 목록</h2>
                 <ul class="list-category">
-                    <li>현재상영영화</li>
+                    <li class="choose">현재상영영화</li>
                     <li>개봉예정영화</li>
                     <li>박스오피스</li>
                 </ul>
-                <div class="list-movie">
-                    <div class="cont-movie">
-                        <img class="img-movie " src="./src/images/Poster_WenivWorld.png" alt="">
-                        <strong class="title-movie">위니브 월드:새로운 시대</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">판타지</p>
-                            </li>
-                            <li>
-                                평점
-                                <img class="img-movie" src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">9.05</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.03.27</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">라이캣,소울곰,개리씨</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                <div class="list-movie box">
+                    <div class="content-movie box">
+                        <img class="img-movie" src="./src/images/Poster_WenivWorld.png" alt="">
+                        <h2 class="title-movie">위니브 월드:새로운 시대</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>판타지</strong></p>
+                            <p class="detail-rating">평점<strong>9.05</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.03.27</strong></p>
+                            <p class="detail-actor">출연<strong>라이캣,소울곰,개리씨</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
 
-                    <div class="cont-movie">
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_withJAVA.png" alt="">
-                        <strong class="title-movie">눈떠보니 코딩테스트 전날 with.JAVA</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">스릴러</p>
-                            </li>
-                            <li>
-                                평점
-                                <img class="img-movie" src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">8.25</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.01</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">자바독,개리씨,빙키</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">눈떠보니 코딩테스트 전날 with.JAVA</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>스릴러</strong></p>
+                            <p class="detail-rating">평점<strong>8.25</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.01</strong></p>
+                            <p class="detail-actor">출연<strong>자바독,개리씨,빙키</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
 
-                    <div class="cont-movie">
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_PythonBootcamp.jpg" alt="">
-                        <strong class="title-movie">파이썬 부트캠프</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">드라마</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">8.77</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.12</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">캣,파이,썬,뮤라</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">파이썬 부트캠프</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>드라마</strong></p>
+                            <p class="detail-rating">평점<strong>8.77</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.12</strong></p>
+                            <p class="detail-actor">출연<strong>캣,파이,썬,뮤라</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
-                    <div class="cont-movie">
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_PyQt.png" alt="">
-                        <strong class="title-movie">파이큐티의 사랑</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">로맨스</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">8.81</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.08</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">파이썬,큐티</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">파이큐티의 사랑</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>로맨스</strong></p>
+                            <p class="detail-rating">평점<strong>8.81</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.08</strong></p>
+                            <p class="detail-actor">출연<strong>파이썬,큐티</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
-                    <div class="cont-movie">
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_NGINX.png" alt="">
-                        <strong class="title-movie">NGINX의 춤</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">드라마</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">9.88</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.15</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">NGINX,노션</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">NGINX의 춤</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>드라마</strong></p>
+                            <p class="detail-rating">평점<strong>9.88</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.15</strong></p>
+                            <p class="detail-actor">출연<strong>NGINX,노션</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
-                    <div class="cont-movie">
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_meetUp.png" alt="">
-                        <strong class="title-movie">어쩌다 밋업</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">드라마</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">9.25</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.17</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">라이캣,자바독,소울곰</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">어쩌다 밋업</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>드라마</strong></p>
+                            <p class="detail-rating">평점<strong>9.25</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.17</strong></p>
+                            <p class="detail-actor">출연<strong>라이캣,자바독,소울곰</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
-                    <div class="cont-movie">
+
+                    <div class="content-movie boxbox">
                         <img class="img-movie" src="./src/images/Poster_PyGame.jpg" alt="">
-                        <strong class="title-movie">파이게임 어드벤처</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">판타지액션</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">8.56</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.05</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">개리씨,파이썬</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">파이게임 어드벤처</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>판타지액션</strong></p>
+                            <p class="detail-rating">평점<strong>8.56</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.05</strong></p>
+                            <p class="detail-actor">출연<strong>개리씨,파이썬</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
-                    <div class="cont-movie">
+                    
+                    <div class="content-movie box">
                         <img class="img-movie" src="./src/images/Poster_MBIT_2.png" alt="">
-                        <strong class="title-movie">MBIT는 내 운명</strong>
-                        <ul class="list-detail">
-                            <li>
-                                개요
-                                <p class="txt-detail">로맨스</p>
-                            </li>
-                            <li>
-                                평점
-                                <img src="./src/images/star_rating.png" alt="">
-                                <p class="txt-detail">9.02</p>
-                            </li>
-                            <li>
-                                개봉
-                                <p class="txt-detail">2021.04.12</p>
-                            </li>
-                            <li>
-                                출연
-                                <p class="txt-detail">라이캣,개리씨,자바독</p>
-                            </li>
-                        </ul>
-                        <a href="#none" class="link-reserve">예매하기</a>
-                        <a href="#none" class="link-teaser">예고편</a>
+                        <h2 class="title-movie">MBIT는 내 운명</h2>
+                        <div class="movie-detail">
+                            <p class="detail-genre">개요<strong>로맨스</strong></p>
+                            <p class="detail-rating">평점<strong>9.02</strong></p>
+                            <p class="detail-opening">개봉<strong>2021.04.12</strong></p>
+                            <p class="detail-actor">출연<strong>라이캣,개리씨,자바독</strong></p>
+                        </div>
+                        <div class="wrap-btns">
+                            <button class="btn-reserve" type="button">예매하기</button>
+                            <button class="btn-teaser" type="button">예고편</button>
+                        </div>
                     </div>
                 </div>
         </section>
     </main>
     <footer>
-        <h2>기업정보</h2>
-        <div>
-            <strong>Jungle Cinema</strong>
-            <a href="#none"></a>
-            <a href="#none"></a>
-            <a href="#none"></a>
-        </div>
+        <article>
+        <h2 class="ir">기업정보</h2>
+        <strong>Jungle Cinema</strong>
+            <h3 class="ir">sns</h3>
+            <a href="#none"><img src="./src/images/sns_twitter.png" alt=""></a>
+            <a href="#none"><img src="./src/images/sns_instagram.png" alt=""></a>
+            <a href="#none"><img src="./src/images/sns_facebook.png" alt=""></a>
+        </article>
         <dl>
-            <dt>사명</dt>
+            <dt class="ir">사명</dt>
             <dd>(주) 정글 시네마</dd>
             <dt>대표</dt>
             <dd>라이언</dd>

@@ -1,26 +1,21 @@
-@charset "utf-8";
-
-:root {
-  --line-dark : #BDBDBD;
-  --line-light : #F2F2F2;
-  --font-light : #828282;
-}
-
+@charset "UTF-8";
 .img-movie {
   display: block;
-  width: 180px;
 }
 
-/* CSS */
+.box {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #BDBDBD;
+}
+
 .movie-chart {
   margin: 86px auto;
-  width: 1060px;
-  border-radius: 10px;
-  border: 2px solid var(--font-light);
-  box-sizing: border-box;
-  background-color: var(--line-light);
+  max-width: 1060px;
+  background-color: #F2F2F2;
+  padding: 0 26px 29px;
+  /* list */
 }
-
 .movie-chart .title-chart, .movie-chart .list-category {
   text-align: center;
 }
@@ -31,23 +26,67 @@
   line-height: 28px;
   text-align: center;
 }
-
 .movie-chart .title-chart::after {
-  content: '';
+  content: "";
   display: block;
-  width: 650px;
+  max-width: 650px;
   height: 2px;
-  background-color: var(--line-dark);
-  margin: 36px auto 0 ;
-} 
-
+  background-color: #BDBDBD;
+  margin: 36px auto 0;
+}
+.movie-chart .list-category {
+  /* js에서 선택시 추가될 class */
+}
 .movie-chart .list-category li {
   display: inline-block;
-  margin : 27px 60px 28px 0;
+  margin: 27px 60px 28px 0;
   margin-right: 60px;
   margin-bottom: 28px;
+  font-weight: 500;
+  color: #828282;
 }
-
 .movie-chart .list-category li:last-child {
   margin-right: 0px;
 }
+.movie-chart .list-category .choose {
+  color: #000;
+  font-weight: 900;
+}
+.list-movie {
+  width: 1003px;
+  background-color: #fff;
+  padding: 24px 25px 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23px;
+  font-family: Noto Sans KR;
+}
+.content-movie {
+  width: 220px;
+  display: block;
+  border: 1px solid #BDBDBD;
+  padding: 18px 19px 0 19px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content-movie .img-movie {
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+.content-movie .title-movie {
+  padding-top: 11px;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.content-movie .list-detail {
+  font-size: 0.75em;
+}
+
+footer {
+  width: 100%;
+  background-color: #F2F2F2;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
