@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .img-movie {
   display: block;
-  border-radius: 10px;
 }
 
 .box {
@@ -10,7 +9,6 @@
   border: 2px solid #BDBDBD;
 }
 
-/* 영화 목록 */
 .movie-chart {
   margin: 86px auto;
   width: 1060px;
@@ -57,7 +55,7 @@
   color: #000;
   font-weight: 900;
 }
-.movie-chart .list-movie {
+.list-movie {
   width: 1003px;
   background-color: #fff;
   padding: 24px 25px 28px;
@@ -66,59 +64,61 @@
   gap: 23px;
   font-family: Noto Sans KR;
 }
-.movie-chart .list-movie .content-movie {
+.content-movie {
   width: 220px;
   background-color: #fff;
   border: 1px solid #BDBDBD;
   padding: 18px 19px 0 19px;
+  box-sizing: border-box;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.movie-chart .list-movie .content-movie .content-movie:hover {
+.content-movie .content-movie:hover {
   cursor: pointer;
 }
-.movie-chart .list-movie .content-movie .img-movie {
+.content-movie .img-movie {
   width: 100%;
-  height: 250px;
   border: 1px solid #BDBDBD;
-  box-sizing: border-box;
   border-radius: 10px;
   margin-bottom: 11px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.movie-chart .list-movie .content-movie .title-movie {
-  width: 100%;
-  margin-bottom: 12px;
+.content-movie .title-movie {
+  padding-bottom: 12px;
   font-size: 1em;
   font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.movie-chart .list-movie .content-movie .movie-detail {
+.content-movie .list-detail {
+  font-size: 0.75em;
+}
+.movie-detail {
   /* 영화 상세내용 */
   color: #828282;
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.5;
-  margin: 12px 0 17px;
+  margin-bottom: 17px;
 }
-.movie-chart .list-movie .content-movie .movie-detail .detail-genre {
+.movie-detail p {
+  margin-bottom: 5px;
+}
+.movie-detail .detail-genre {
   float: left;
 }
-.movie-chart .list-movie .content-movie .movie-detail .detail-genre::after {
+.movie-detail .detail-genre::after {
   clear: both;
 }
-.movie-chart .list-movie .content-movie .movie-detail .detail-rating {
+.movie-detail .detail-rating {
   text-align: right;
 }
-.movie-chart .list-movie .content-movie .movie-detail li strong {
+.movie-detail strong {
   margin-left: 5px;
   color: #000;
 }
-.movie-chart .list-movie .content-movie .movie-detail .detail-rating strong {
-  margin-left: 0px;
-}
-.movie-chart .list-movie .content-movie .wrap-btns {
+
+.content-movie .wrap-btns {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -131,19 +131,19 @@
   border-top: 1px solid #BDBDBD;
   box-sizing: border-box;
 }
-.movie-chart .list-movie .content-movie .wrap-btns .btn-reserve {
+.content-movie .wrap-btns .btn-reserve {
   display: block;
   padding: 9px 0 12px;
 }
-.movie-chart .list-movie .content-movie .wrap-btns .btn-teaser {
+.content-movie .wrap-btns .btn-teaser {
   display: inline-block;
   border-left: 1px solid #BDBDBD;
   position: relative;
 }
-.movie-chart .list-movie .content-movie .wrap-btns .btn-teaser .img-play {
+.content-movie .wrap-btns .btn-teaser .img-play {
   width: 16px;
 }
-.movie-chart .list-movie .content-movie .wrap-btns .btn-teaser::before {
+.content-movie .wrap-btns .btn-teaser::before {
   content: "";
   display: block;
   position: absolute;
@@ -158,6 +158,7 @@ footer {
   width: 100%;
   background-color: #F2F2F2;
   padding-top: 50px;
+  /* https://yoojs1205.github.io/movie_list/ */
 }
 footer .top {
   /*     padding: 50px auto 42px; */
@@ -174,4 +175,4 @@ footer .top .content-sns {
 }
 footer .top .content-sns img {
   width: 24px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style copy.css.map */
