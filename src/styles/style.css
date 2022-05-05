@@ -154,24 +154,43 @@
   background: no-repeat center/16px url(../images/icon_play.png);
 }
 
-footer {
-  width: 100%;
+.footer {
+  padding: 53px 0 38px;
   background-color: #F2F2F2;
-  padding-top: 50px;
 }
-footer .top {
-  /*     padding: 50px auto 42px; */
+.footer .top, .footer .bottom {
+  margin: 0 auto;
+  max-width: 1190px;
 }
-footer .top strong {
+.footer .right {
+  float: right;
+}
+.footer .right::after {
+  clear: both;
+}
+.footer .top strong {
   font-weight: 700;
   font-size: 22px;
 }
-footer .top .content-sns {
-  display: inline-block;
+.footer .top .content-sns {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 2.6rem;
 }
-footer .top .content-sns img {
+.footer .top .content-sns img {
   width: 24px;
+}
+.footer .top::after {
+  content: "";
+  display: block;
+  max-width: 1190px;
+  height: 1px;
+  background-color: #BDBDBD;
+  margin: 36px auto 0;
+}
+.footer .bottom {
+  margin-top: 26px;
+}
+.footer .bottom dl > dt, .footer .bottom dl > dd {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

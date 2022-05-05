@@ -162,9 +162,11 @@ $font-content-stack : Noto Sans KR;
           display: inline-block;
           border-left: 1px solid #BDBDBD;
           position: relative;
+
           .img-play {
             width: 16px;
           }
+
         }
 
         .btn-teaser::before {
@@ -184,13 +186,25 @@ $font-content-stack : Noto Sans KR;
 }
 
 
-footer {
-  width: 100%;
+.footer {
+  padding: 53px 0 38px;
   background-color: $color-gray-light;
-  padding-top: 50px;
   
+  .top, .bottom {
+    
+    margin: 0 auto;
+    max-width: 1190px;
+  }
+  
+  .right {
+    float: right;
+    
+  }
+  .right::after {
+    clear: both;
+  }
+
   .top {
-/*     padding: 50px auto 42px; */
 
     strong{
       font-weight: 700;
@@ -198,15 +212,34 @@ footer {
     }
     
     .content-sns {
-      display: inline-block;
       font-weight: 700;
       font-size: 2.2rem;
       line-height: 2.6rem;
       
-    
-    img {
-      width: 24px;
+      img {
+        width: 24px;
+      }
     }
+
   }
+  
+  .top::after {
+    content: '';
+    display: block;
+    max-width: 1190px;
+    height: 1px;
+    background-color: $color-gray-dark;
+    margin: 36px auto 0 ;
+  }
+
+  .bottom {
+    margin-top: 26px;
+
+    dl > dt, dl > dd {
+      display: inline-block;
+    }
+
+
   }
 }
+
