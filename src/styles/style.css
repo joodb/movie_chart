@@ -190,7 +190,21 @@
 }
 .footer .bottom {
   margin-top: 26px;
+  color: #4F4F4F;
+  font-family: Noto Sans KR;
 }
 .footer .bottom dl > dt, .footer .bottom dl > dd {
   display: inline-block;
+}
+.footer .bottom .ir + dd, .footer .bottom dl > dt, .footer .bottom dd:last-child {
+  font-weight: 700;
+  font-size: 14px;
+}
+.footer .bottom dl > dd {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .bottom dl > dt::before {
+  content: "|";
+  margin-right: 3px;
 }/*# sourceMappingURL=style.css.map */

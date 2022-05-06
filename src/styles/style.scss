@@ -23,7 +23,7 @@ $font-content-stack : Noto Sans KR;
   width: 1060px;
   background-color: $color-gray-light;
   padding: 0 26px 29px ;
-
+  
   .title-chart, .list-category {
     text-align: center;
   }
@@ -234,12 +234,27 @@ $font-content-stack : Noto Sans KR;
 
   .bottom {
     margin-top: 26px;
-
+    color: #4F4F4F;
+    font-family: Noto Sans KR;
     dl > dt, dl > dd {
       display: inline-block;
     }
+    
+    .ir+dd, dl > dt, dd:last-child {
+      font-weight: 700;
+      font-size: 14px;
+    }
 
+    dl > dd {
+      font-size: 14px;
+      font-weight: 400;
+    }
 
+    
+    dl > dt::before {
+      content: '\007C';
+      margin-right: 3px;
+    }
   }
 }
 
