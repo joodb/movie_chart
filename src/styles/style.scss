@@ -142,47 +142,49 @@ $font-content-stack : Noto Sans KR;
 
       .wrap-btns {
         display: flex;
-        font-weight: 500;
-        font-size: 14px;
-        color: #000000;
-        margin: 0 -20px;
-        background-color: #F2F2F2;
-        font-weight: 500;
-        font-size: 0.8rem;
-        text-align: center;
-        border-top: 1px solid #BDBDBD;
-        box-sizing: border-box;
+        margin-left: -19px;
+      
+
+        .btn-reserve, .btn-teaser {
+          display: block;
+          border-top: 1px solid $color-gray-dark;
+          background-color: #F2F2F2;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 500;
+        }
         
         .btn-reserve {
-          display: block;
-          padding: 9px 0 12px;
+          padding: 9px  28px 11px 26px;
         }
-
+        
         .btn-teaser {
-          display: inline-block;
-          border-left: 1px solid #BDBDBD;
-          position: relative;
-
+          border-top: 1px solid $color-gray-dark;
+          padding: 9px 33px 11px 24px;
+          line-height: 100%;
+          border-left: 1px solid $color-gray-dark;
+          
           .img-play {
             width: 16px;
           }
 
         }
-
+        
         .btn-teaser::before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 16px;
+          content: '';
+          display: inline-block;
           height: 16px;
-          top: 10px;
-          left: 13px;
-          background: no-repeat center/ 16px url(../images/icon_play.png);
+          width: 16px;
+          background: no-repeat center/16px url(../images/icon_play.png);
+          vertical-align: sub;
+          margin-right: 2px;
         }
+      }
+
       }
     }
 
-  }
+  
 }
 
 
@@ -191,7 +193,7 @@ $font-content-stack : Noto Sans KR;
   background-color: $color-gray-light;
   
   .top, .bottom {
-    
+    width: 1060px;
     margin: 0 auto;
     max-width: 1190px;
   }
@@ -258,3 +260,13 @@ $font-content-stack : Noto Sans KR;
   }
 }
 
+
+
+/* 태블릿 */
+@media (max-width: 768px) {
+	
+}
+/* 모바일 */
+@media (max-width: 500px) {
+	
+}
