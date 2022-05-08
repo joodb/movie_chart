@@ -6,6 +6,7 @@ $font-color-light : #828282;
 $font-stack : Roboto;
 $font-content-stack : Noto Sans KR;
 
+
 .img-movie {
   display: block;
   border-radius: 10px;
@@ -17,17 +18,25 @@ $font-content-stack : Noto Sans KR;
   border: 2px solid $color-gray-dark;
 }
 
+/* font */
+.title-chart, .list-category {
+  font-family: $font-stack;
+}
+.list-movie , .bottom {
+  font-family: $font-content-stack;
+}
+
+
 /* 영화 목록 */
 .movie-chart {
   margin: 86px auto;
   width: 1060px;
   background-color: $color-gray-light;
-  padding: 0 26px 29px ;
   
   .title-chart, .list-category {
     text-align: center;
   }
-
+  
   .title-chart {
     margin: 40px auto 0;
     font-weight: 700;
@@ -49,15 +58,14 @@ $font-content-stack : Noto Sans KR;
     
     li {
       display: inline-block;
-      margin : 27px 60px 28px 0;
-      margin-right: 60px;
-      margin-bottom: 28px;
+      margin : 27px 0 28px 0;
+      padding-right:60px;
       font-weight: 500;
       color: $font-color-light;
     }
 
     li:last-child {
-      margin-right: 0px;
+      padding-right: 0px;
     }
     
     li:hover {
@@ -77,8 +85,8 @@ $font-content-stack : Noto Sans KR;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 23px;
-    font-family: $font-content-stack;
-    
+    margin :  0 26px 29px ;
+
     .content-movie {
       width: 220px;
       background-color: #fff;
@@ -127,16 +135,29 @@ $font-content-stack : Noto Sans KR;
         }
 
         .detail-rating {
-          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .detail-rating strong::before {
+          content: '';
+          display: block;
+          width: 14px;
+          height: 14px;
+          background: no-repeat center/14px url('../images/star_rating.png');
+          margin-right: 4px;
+        }
+
+        .detail-rating strong{
+          margin-left: 4px;
+          display: flex;
+          align-items: center;
+          
         }
 
         li strong {
           margin-left: 5px;
           color: #000;
-        }
-        
-        .detail-rating strong{
-          margin-left: 0px;
         }
       }
 
@@ -163,11 +184,12 @@ $font-content-stack : Noto Sans KR;
           padding: 9px 33px 11px 24px;
           line-height: 100%;
           border-left: 1px solid $color-gray-dark;
-          
+          display: flex;
+          align-items: center;
+
           .img-play {
             width: 16px;
           }
-
         }
         
         .btn-teaser::before {
@@ -175,27 +197,22 @@ $font-content-stack : Noto Sans KR;
           display: inline-block;
           height: 16px;
           width: 16px;
-          background: no-repeat center/16px url(../images/icon_play.png);
-          vertical-align: sub;
+          background: no-repeat center/16px url('../images/icon_play.png');
           margin-right: 2px;
         }
       }
-
-      }
     }
-
-  
+  }
 }
 
+.footer, .top, .bottom {
+  background-color: $color-gray-light;
+}
 
 .footer {
-  padding: 53px 0 38px;
-  background-color: $color-gray-light;
-  
   .top, .bottom {
-    width: 1060px;
+    width: 1188px;
     margin: 0 auto;
-    max-width: 1190px;
   }
   
   .right {
@@ -205,9 +222,10 @@ $font-content-stack : Noto Sans KR;
   .right::after {
     clear: both;
   }
-
+  
   .top {
-
+    padding: 53px 0 0;
+    
     strong{
       font-weight: 700;
       font-size: 22px;
@@ -222,7 +240,6 @@ $font-content-stack : Noto Sans KR;
         width: 24px;
       }
     }
-
   }
   
   .top::after {
@@ -233,11 +250,11 @@ $font-content-stack : Noto Sans KR;
     background-color: $color-gray-dark;
     margin: 36px auto 0 ;
   }
-
+  
   .bottom {
-    margin-top: 26px;
+    padding: 26px 0 38px;
     color: #4F4F4F;
-    font-family: Noto Sans KR;
+
     dl > dt, dl > dd {
       display: inline-block;
     }
@@ -246,12 +263,11 @@ $font-content-stack : Noto Sans KR;
       font-weight: 700;
       font-size: 14px;
     }
-
+    
     dl > dd {
       font-size: 14px;
       font-weight: 400;
     }
-
     
     dl > dt::before {
       content: '\007C';
@@ -261,12 +277,3 @@ $font-content-stack : Noto Sans KR;
 }
 
 
-
-/* 태블릿 */
-@media (max-width: 768px) {
-	
-}
-/* 모바일 */
-@media (max-width: 500px) {
-	
-}
